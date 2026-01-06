@@ -13,5 +13,8 @@
 - Block IP if required
 - Escalate if successful login detected
 
+## MITRE ATT&CK Mapping
+- Credential Access – Brute Force (T1110.001)
+
 ## Closure
 - Close incident if no compromise detected
