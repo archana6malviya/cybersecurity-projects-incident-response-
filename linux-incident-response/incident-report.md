@@ -1,4 +1,4 @@
-# 🚨 Incident Report – SSH Brute-Force Attack
+# 🚨 Incident Report – Linux SSH Brute-Force Attack
 
 ## Incident Details
 - Incident ID: IR-LINUX-001
@@ -8,7 +8,7 @@
 ---
 
 ## Summary
-Multiple failed SSH login attempts were detected from an external IP address indicating a brute-force attack.
+Multiple failed SSH login attempts were detected from an external IP, indicating a brute-force attack attempt.
 
 ---
 
@@ -18,9 +18,9 @@ Multiple failed SSH login attempts were detected from an external IP address ind
 ---
 
 ## Investigation
-- Repeated failed password attempts
-- Same IP targeting multiple users
-- No successful login found
+- Repeated failed login attempts
+- Same IP targeting multiple usernames
+- No successful login detected
 
 ---
 
@@ -31,17 +31,24 @@ Multiple failed SSH login attempts were detected from an external IP address ind
 ---
 
 ## Impact
-- No compromise
+- No system compromise
 - No data loss
 
 ---
 
 ## Response
-- IP blocked using firewall
-- Monitoring continued
+- Malicious IP blocked using firewall
+
+---
+
+## MITRE ATT&CK Mapping
+- **Tactic:** Credential Access
+- **Technique:** Brute Force
+- **Technique ID:** T1110
+- **Sub-technique:** Password Guessing (T1110.001)
 
 ---
 
 ## Lessons Learned
-- SSH should be hardened
+- SSH hardening is required
 - Brute-force attempts are common
