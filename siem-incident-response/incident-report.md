@@ -46,6 +46,11 @@ A SIEM alert was triggered due to multiple failed authentication attempts from a
 
 ---
 
+## MITRE ATT&CK Mapping
+- **Tactic:** Credential Access
+- **Technique:** Brute Force – Password Guessing
+- **Technique ID:** T1110.001
+---
 ## Lessons Learned
 - SIEM alerts help detect early attack attempts
 - Correlation rules reduce investigation time
